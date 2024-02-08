@@ -20,11 +20,10 @@ class RegistratinForm(UserCreationForm):
             'password1': 'пароль',
             'password2': 'пароль еще раз'
         }
-        help_texts = {
+        help_texts = { 
             "username": '',
             "password1": '',
-
-        }
+         }
 
 class DriverForm(forms.ModelForm):
     birthday = forms.DateField(widget=forms.DateInput(format='%d.%m.%Y'), input_formats=('%d.%m.%Y'))
